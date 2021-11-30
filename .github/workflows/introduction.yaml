@@ -11,4 +11,5 @@ jobs:
           echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}." 
       - name: List files in the repository
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Last echo of the job status
+        run: echo "🍏 This job's status is ${{ job.status }}."
